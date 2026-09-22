@@ -20,6 +20,8 @@ spec:
       enable: true
     pluginRegistry:
       openVSXURL: {{ .Values.openVSXURL | quote }}
+    openVSXRegistry:
+      enable: false
   containerRegistry: {}
   devEnvironments:
     startTimeoutSeconds: {{ .Values.devEnvironments.startTimeoutSeconds }}
